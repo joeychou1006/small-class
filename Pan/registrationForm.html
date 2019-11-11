@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>My 前端小世界</title>
+    <link rel=“stylesheet” type=“text/css” href=“https://jsbin.com/guyese/edit?html,css,output”>
+    <style>
+        h3{
+            text-align:center;
+            font-family:DFKai-sb,fantasy,serif;
+            color:blue;
+        }
+
+        form{
+            font-family:cursive,fantasy,monospace;
+            text-indent:10%;
+        }
+
+        button{
+            margin-left:50%;
+            background-color:green;
+            color:white;
+            text-align: center;
+            font-size:15px;
+        }
+
+        button:active{
+            background-color:black;
+        }
+
+        textarea{
+            border-style:double;
+            border-width:3px;
+            border-radius:10px;
+        }
+
+        .input{
+            border-style:solid;
+            border-width:1px;
+            border-radius:2px;
+        }
+
+        .remark{
+            cursor:help;
+        }
+    </style>
+</head>
+<body>
+<h3>「前端小小班」報名表</h3>
+<hr>
+
+<form action="./" method="post">
+    <div>
+        <label for="userName">暱稱：</label>
+        <input type="text" name="userName" class="input" placeholder="what's your name.">
+    </div>
+
+    <div>
+        <label>性別：</label>
+        <input type="radio" name="gender" value="boy" checked>男孩
+        <input type="radio" name="gender" value="girl">女孩
+    </div>
+
+    <div>
+        <label>居住地：</label>
+        <select name="userLoction" class="userLoction">
+            <option value="taipei">台北</option>
+            <option value="newTaipei">新北</option>
+            <option value="taoyuan">桃園</option>
+            <option value="hsinchu">新竹</option>
+            <option value="miaoli">苗栗</option>
+            <option value="taichung" selected>台中</option>
+            <option value="changhua">彰化</option>
+            <option value="nantou">南投</option>
+            <option value="yunlin">雲林</option>
+            <option value="chiayi">嘉義</option>
+            <option value="tainan">台南</option>
+            <option value="kaohsiung">高雄</option>
+            <option value="pingtung">屏東</option>
+            <option value="taitung">台東</option>
+            <option value="hualien">花蓮</option>
+            <option value="yilan">宜蘭</option>
+            <option value="keelung">基隆</option>
+        </select>
+    </div>
+
+    <div>
+        <label>從哪裡得知：</label>
+        <input type="radio" name="informationFrom" class="informationFrom" value="web">網站宣傳</input>
+        <input type="radio" name="informationFrom" class="informationFrom" value="friend" checked>親友推薦</input>
+        <input type="radio" name="informationFrom" class="informationFrom" value="poster">海報</input>
+        <input type="radio" name="informationFrom" class="informationFrom" value="DM">DM</input>
+        <input type="radio" name="informationFrom" class="informationFrom" value="advertisement">廣告</input>
+        <input type="radio" name="informationFrom" class="informationFrom" value="others">其他</input>
+        <input type="text" name="informationFrom" class="input">
+    </div>
+
+    <div>
+        <label>興趣：</label>
+        <input type="checkbox" name="hobby" class="hobby" value="listeningToMusic">聽音樂</input>
+        <input type="checkbox" name="hobby" class="hobby" value="singing">唱歌</input>
+        <input type="checkbox" name="hobby" class="hobby" value="readingNovel">看小說</input>
+        <input type="checkbox" name="hobby" class="hobby" value="coding">打程式</input>
+        <input type="checkbox" name="hobby" class="hobby" value="bingeWatching">追劇</input>
+        <input type="checkbox" name="hobby" class="hobby" value="playBall">打球</input>
+        <input type="checkbox" name="hobby" class="hobby" value="fitness">健身</input>
+        <input type="checkbox" name="hobby" class="hobby" value="others">其他</input>
+        <input type="text" name="hobby" class="input">
+    </div>
+
+    <div>
+        <label for="remark">想說的話：</label>
+    </div>
+    <div>
+        <textarea name="remark" class="remark">我想成為全端工程師？...</textarea>
+    </div>
+
+    <button type="submit">送出</button>
+</form>
+</body>
+</html>
+
